@@ -21,6 +21,7 @@
             display: flex;
             justify-content: center;
             background-color: #343a40;
+            flex-wrap: wrap;
         }
         nav a {
             color: white;
@@ -33,10 +34,28 @@
             background-color: #495057;
         }
         .hero {
+            position: relative;
             background: url('img/hero.png') center/cover no-repeat;
-            color: white;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             text-align: center;
-            padding: 6rem 2rem;
+        }
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .hero h2, .hero p {
+            position: relative;
+            z-index: 1;
+            color: white;
+            margin: 0.5rem 0;
         }
         .section {
             padding: 4rem 2rem;
@@ -46,6 +65,10 @@
         .section h2 {
             margin-bottom: 1rem;
             color: #1a1a1a;
+            text-align: center;
+        }
+        .section p {
+            text-align: center;
         }
         .section img {
             width: 100%;
@@ -72,8 +95,10 @@
         <a href="#overons">Over ons</a>
     </nav>
     <section class="hero">
-        <h2>Wij brengen je systemen weer tot leven</h2>
-        <p>Data kwijt? Netwerk chaos? De IT Pater herstelt het.</p>
+        <div>
+            <h2>Wij brengen je systemen weer tot leven</h2>
+            <p>Data kwijt? Netwerk chaos? De IT Pater herstelt het.</p>
+        </div>
     </section>
     <section class="section" id="recovery">
         <h2>Recovery</h2>

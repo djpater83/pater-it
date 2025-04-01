@@ -10,6 +10,7 @@
             font-family: Arial, sans-serif;
             background-color: #f8f9fa;
             color: #333;
+            line-height: 1.6;
         }
         header {
             background-color: #1a1a1a;
@@ -51,35 +52,64 @@
             bottom: 0;
             background: rgba(0, 0, 0, 0.5);
         }
-        .hero h2, .hero p {
+        .hero-content {
             position: relative;
             z-index: 1;
             color: white;
-            margin: 0.5rem 0;
+            max-width: 800px;
+            padding: 0 1rem;
         }
         .section {
-            padding: 4rem 2rem;
+            padding: 4rem 1rem;
             max-width: 1000px;
             margin: 0 auto;
+            text-align: center;
         }
         .section h2 {
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
             color: #1a1a1a;
-            text-align: center;
+            font-size: 2rem;
         }
         .section p {
-            text-align: center;
+            margin-bottom: 2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .img-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 2rem auto;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
         .section img {
             width: 100%;
-            border-radius: 8px;
-            margin-top: 1rem;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        .section img:hover {
+            transform: scale(1.02);
         }
         footer {
             background-color: #1a1a1a;
             color: white;
             text-align: center;
-            padding: 1rem;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+        @media (max-width: 768px) {
+            .hero {
+                height: 50vh;
+            }
+            nav a {
+                padding: 0.8rem 1rem;
+            }
+            .section {
+                padding: 2rem 1rem;
+            }
         }
     </style>
 </head>
@@ -95,7 +125,7 @@
         <a href="#overons">Over ons</a>
     </nav>
     <section class="hero">
-        <div>
+        <div class="hero-content">
             <h2>Wij brengen je systemen weer tot leven</h2>
             <p>Data kwijt? Netwerk chaos? De IT Pater herstelt het.</p>
         </div>
@@ -103,17 +133,23 @@
     <section class="section" id="recovery">
         <h2>Recovery</h2>
         <p>Wij bieden snelle en betrouwbare data recovery. Of het nu om een gecrashte laptop, NAS of server gaat: wij halen eruit wat er nog in zit.</p>
-        <img src="img/recovery.png" alt="Data recovery">
+        <div class="img-container">
+            <img src="img/recovery.png" alt="Data recovery" loading="lazy">
+        </div>
     </section>
     <section class="section" id="itoporde">
         <h2>IT op orde</h2>
         <p>We zorgen dat jouw IT-omgeving stabiel, veilig en actueel blijft. Updates, monitoring, en optimalisaties behoren tot onze dagelijkse routine.</p>
-        <img src="img/it_op_orde.png" alt="IT op orde">
+        <div class="img-container">
+            <img src="img/it_op_orde.png" alt="IT op orde" loading="lazy">
+        </div>
     </section>
     <section class="section" id="connectiviteit">
         <h2>Connectiviteit</h2>
         <p>Of het nu gaat om netwerken thuis of in de cloud, we zorgen dat alles soepel met elkaar praat. Van routers tot Entra ID, wij regelen het.</p>
-        <img src="img/connectiviteit.png" alt="Connectiviteit">
+        <div class="img-container">
+            <img src="img/connectiviteit.png" alt="Connectiviteit" loading="lazy">
+        </div>
     </section>
     <section class="section" id="overons">
         <h2>Over ons</h2>

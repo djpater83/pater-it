@@ -1,37 +1,102 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8">
-  <title>Pater-IT</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De IT Pater</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        header {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #343a40;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background-color: #495057;
+        }
+        .hero {
+            background: url('img/hero.png') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 6rem 2rem;
+        }
+        .section {
+            padding: 4rem 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .section h2 {
+            margin-bottom: 1rem;
+            color: #1a1a1a;
+        }
+        .section img {
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Pater-IT</h1>
-    <p>Jouw partner voor slimme IT-oplossingen</p>
-  </header>
-
-  <main>
-    <h2>Welkom</h2>
-    <p>Met meer dan 15 jaar ervaring in IT help ik organisaties vooruit met beheer, migraties, cloud en security. Praktisch, professioneel en resultaatgericht.</p>
-
-    <h3>Diensten</h3>
-    <ul>
-      <li>Systeem- en netwerkbeheer</li>
-      <li>Cloudmigraties (Microsoft 365, Azure)</li>
-      <li>Security, RBAC & IAM</li>
-      <li>Werkplekbeheer & Windows-implementaties</li>
-      <li>Dataherstel & advies</li>
-    </ul>
-
-    <h3>Contact</h3>
-    <p>Mail: info@pater-it.com</p>
-    <p>Locatie: Helmond, Nederland</p>
-  </main>
-
-  <footer>
-    &copy; 2025 Pater-IT. Alle rechten voorbehouden.
-  </footer>
+    <header>
+        <h1>De IT Pater</h1>
+        <p>Zegen voor je netwerk, redding voor je data</p>
+    </header>
+    <nav>
+        <a href="#recovery">Recovery</a>
+        <a href="#itoporde">IT op orde</a>
+        <a href="#connectiviteit">Connectiviteit</a>
+        <a href="#overons">Over ons</a>
+    </nav>
+    <section class="hero">
+        <h2>Wij brengen je systemen weer tot leven</h2>
+        <p>Data kwijt? Netwerk chaos? De IT Pater herstelt het.</p>
+    </section>
+    <section class="section" id="recovery">
+        <h2>Recovery</h2>
+        <p>Wij bieden snelle en betrouwbare data recovery. Of het nu om een gecrashte laptop, NAS of server gaat: wij halen eruit wat er nog in zit.</p>
+        <img src="img/recovery.png" alt="Data recovery">
+    </section>
+    <section class="section" id="itoporde">
+        <h2>IT op orde</h2>
+        <p>We zorgen dat jouw IT-omgeving stabiel, veilig en actueel blijft. Updates, monitoring, en optimalisaties behoren tot onze dagelijkse routine.</p>
+        <img src="img/it_op_orde.png" alt="IT op orde">
+    </section>
+    <section class="section" id="connectiviteit">
+        <h2>Connectiviteit</h2>
+        <p>Of het nu gaat om netwerken thuis of in de cloud, we zorgen dat alles soepel met elkaar praat. Van routers tot Entra ID, wij regelen het.</p>
+        <img src="img/connectiviteit.png" alt="Connectiviteit">
+    </section>
+    <section class="section" id="overons">
+        <h2>Over ons</h2>
+        <p>Met meer dan 15 jaar ervaring in IT staat De IT Pater klaar voor elke technische uitdaging. Professioneel, discreet, en altijd met focus op herstel en stabiliteit.</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 De IT Pater. Alle rechten voorbehouden.</p>
+    </footer>
 </body>
 </html>
+

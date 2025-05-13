@@ -59,6 +59,41 @@
             max-width: 800px;
             padding: 0 1rem;
         }
+        .diensten-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 3rem 1rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .dienst {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            aspect-ratio: 1/1;
+            text-align: center;
+            padding: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+        .dienst:hover {
+            transform: translateY(-5px);
+        }
+        .dienst img {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+            margin-bottom: 1rem;
+        }
+        .dienst h3 {
+            font-size: 1.2rem;
+            color: #1a1a1a;
+            margin: 0;
+        }
         .section {
             padding: 4rem 1rem;
             max-width: 1000px;
@@ -131,6 +166,28 @@
             <p>Data kwijt? Netwerk chaos? De IT Pater herstelt het.</p>
         </div>
     </section>
+
+    <!-- Nieuwe visuele dienstenvierkanten -->
+    <section class="diensten-grid">
+        <div class="dienst">
+            <img src="img/recovery.png" alt="Recovery icoon">
+            <h3>Data Recovery</h3>
+        </div>
+        <div class="dienst">
+            <img src="img/spoed.png" alt="Spoedservice icoon">
+            <h3>Spoedservice</h3>
+        </div>
+        <div class="dienst">
+            <img src="img/destructie.png" alt="Data vernietiging icoon">
+            <h3>Data Destructie</h3>
+        </div>
+        <div class="dienst">
+            <img src="img/b2b.png" alt="Zakelijke ondersteuning icoon">
+            <h3>B2B Support</h3>
+        </div>
+    </section>
+
+    <!-- Bestaande secties blijven zoals ze zijn -->
     <section class="section" id="recovery">
         <h2>Recovery</h2>
         <p>Wij bieden snelle en betrouwbare data recovery. Of het nu om een gecrashte laptop, NAS of server gaat: wij halen eruit wat er nog in zit.</p>
